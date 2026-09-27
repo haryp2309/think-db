@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution & packaging
+build/
+dist/
+wheels/
+*.egg-info/
+MANIFEST
+
+# Pytest & Ruff caches
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# SQLite databases & local dev files
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+dev.db
+*.db
+
+# Environment variables
+.env

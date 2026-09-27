@@ -1,0 +1,23 @@
+# OS & Editor Metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Package & Tool Caches
+.pnpm-store
+.pytest_cache/
+.ruff_cache/
+
+# Local Databases
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# Project Build & Environment Artifacts
+node_modules/
+dist/
+build/
+.venv/
+.gradle/

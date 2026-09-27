@@ -1,0 +1,35 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "FastAPI thin backend with dynamic schemas, bidirectional references, and Polars export"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiosqlite>=0.20.0",
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "polars>=1.44.2",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.0.0",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "python-multipart>=0.0.32",
+    "sqlalchemy[asyncio]>=2.0.38",
+    "tortoise-orm[asyncpg]>=1.1.8",
+    "uvicorn>=0.54.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40.1",
+    "ruff>=0.16.9",
+]
+
+[tool.basedpyright]
+typeCheckingMode = "strict"
+
